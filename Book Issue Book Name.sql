@@ -1,0 +1,4 @@
+SELECT LMS_BOOK_DETAIL.BOOK_ID||'---'||LMS_BOOK_DETAIL.BOOK_TITLE AS display_value,
+   LMS_BOOK_DETAIL.BOOK_ID as return_value
+   from LMS_BOOK_DETAIL
+   order by LMS_BOOK_DETAIL.BOOK_ID;
