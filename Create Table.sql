@@ -1,5 +1,15 @@
 --Create Table for Library Management System LMS
 
+drop table  LMS_ADMIN                      cascade constraints;
+drop table  LMS_BOOK_DETAIL                cascade constraints;
+drop table  LMS_BOOK_ISSUE                 cascade constraints;
+drop table  LMS_BOOK_RETURN                cascade constraints;
+drop table  LMS_BORROWER                   cascade constraints;
+drop table  LMS_ENTITY_TYPE                cascade constraints;
+drop table  LMS_LOGIN                      cascade constraints;
+drop table  LMS_SHELF_DETAIL               cascade constraints;
+drop table  LMS_STAFF_DETAIL               cascade constraints;
+drop table  LMS_STUDENT_DETAILS            cascade constraints;
 
 CREATE TABLE  "LMS_ADMIN" 
    (	"ADMIN_ID" NUMBER(7,0) NOT NULL ENABLE, 
@@ -57,8 +67,7 @@ CREATE TABLE  "LMS_BOOK_RETURN"
 	"FINE" NUMBER(4,0), 
 	 CONSTRAINT "LMS_BOOK_RETURN_PK" PRIMARY KEY ("BOOK_RETURN_ID") ENABLE
    )
-
-
+/
 
 CREATE TABLE  "LMS_BORROWER" 
    (	"BORROWER_ID" NUMBER(7,0) NOT NULL ENABLE, 
